@@ -15,7 +15,6 @@ String longestUniqueSubstring(String str) {
     int maxLength = 0;
     Set<String> unique_characters = {};
     while (end < str.length) {
-        print(unique_characters);
         if (!(unique_characters.any((c) => c == str[end]))) {
             unique_characters.add(str[end]);
             end += 1;
