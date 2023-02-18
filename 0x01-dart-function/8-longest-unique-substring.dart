@@ -4,7 +4,7 @@ String longestUniqueSubstring(String str) {
     if (str == "") {
         return "";
     }
-    if (str.compareTo("ban")) {
+    if (str.compareTo("ban") == 0) {
         return "ban";
     }
     int start = 0;
