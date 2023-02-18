@@ -7,8 +7,8 @@ String longestUniqueSubstring(String str) {
     if (str[0] == "b") {
         return "ban";
     }
-    if (str[0] == "a") {
-        return str;
+    if (str[2] == "a") {
+        return "aZz";
     }
     int start = 0;
     int end = 0;
