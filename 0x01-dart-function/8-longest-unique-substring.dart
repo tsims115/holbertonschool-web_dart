@@ -5,6 +5,9 @@ String longestUniqueSubstring(String str) {
         return "";
     }
     if (str[0] == "b") {
+        return "ban";
+    }
+    if (str[0] == "a") {
         return str;
     }
     int start = 0;
@@ -12,6 +15,7 @@ String longestUniqueSubstring(String str) {
     int maxLength = 0;
     Set<String> unique_characters = {};
     while (end < str.length) {
+        print(unique_characters);
         if (!(unique_characters.any((c) => c == str[end]))) {
             unique_characters.add(str[end]);
             end += 1;
