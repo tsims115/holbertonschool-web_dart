@@ -1,12 +1,15 @@
 class Password {
-  String _password;
-  Password({this._password: ""});
+  String _password = "";
+  Password({password}) {
+    _password = password;
+  }
   bool isValid() {
-    return RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,16}$').hasMatch(this._password);
+    return RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,16}$')
+      .hasMatch(_password);
   }
 
   @override
   String toString() {
-    return "Your Password is: ${this._password}";
+    return "Your Password is: ${_password}";
   }
 }
