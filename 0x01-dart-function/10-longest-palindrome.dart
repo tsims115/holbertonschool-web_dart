@@ -29,7 +29,6 @@ String longestPalindrome(String str) {
         if ( isPalindrome(createString(unique_characters)) && unique_characters.length > unique.length) {
             unique = createString(unique_characters);
         }
-        print(createString(unique_characters));
     }
     if (unique == "") {
         return "none";
