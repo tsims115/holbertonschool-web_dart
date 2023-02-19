@@ -23,6 +23,6 @@ class User extends Password {
       user_password: userJson['user_password']);
     }
   String toString() {
-    return "User(id : ${this.id}, name: ${this.name}, age: ${this.age}, height: ${this.height}, Password: ${Password(password: this.user_password).isValid()})";
+    return "User(id: ${this.id}, name: ${this.name}, age: ${this.age}, height: ${this.height}, Password: ${Password(password: this.user_password).isValid()})";
   }
 }
