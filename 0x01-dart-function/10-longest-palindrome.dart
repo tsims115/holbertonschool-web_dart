@@ -16,18 +16,16 @@ String longestPalindrome(String str) {
     int end = 0;
     int maxLength = 0;
     String unique = "";
-    Set<String> unique_characters = {};
-    while (end < str.length) {
-        if (!(unique_characters.any((c) => c == str[end]))) {
-            unique_characters.add(str[end]);
-            end += 1;
+    String cur_str = "";
+    while (start < str.length) {
+        cur_str = str.substring(start, end);
+        if (isPalindrome(cur_str)) {
+            unique = cur_str;
         }
-        else {
-            unique_characters.remove(str[start]);
+        if (end == str.length) {
             start += 1;
-        }
-        if ( isPalindrome(createString(unique_characters)) && unique_characters.length > unique.length) {
-            unique = createString(unique_characters);
+        } else {
+            end += 1;
         }
     }
     if (unique == "") {
