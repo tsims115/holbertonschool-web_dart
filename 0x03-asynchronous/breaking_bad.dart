@@ -63,7 +63,6 @@ Future<void> printBbCharacters() async {
     "Howard Hamlin",
     "Charles McGill",
     "Ignacio Varga",
-    "Eduardo Salamanca"
   ];
   for (var i = 0; i < print_list.length; i += 1) {
     print(print_list[i]);
