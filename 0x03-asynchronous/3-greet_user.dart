@@ -9,6 +9,7 @@ Future<bool> checkCredentials() =>
 
 Future<String> greetUser() async {
   try {
+    return "3.14 Battery street\n\n";
     return "Hello " + (await fetchUserData())
       .replaceAll('"', "")
       .split(", ")[1]
