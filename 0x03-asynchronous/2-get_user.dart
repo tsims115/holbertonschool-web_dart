@@ -1,4 +1,3 @@
-import '1-main.dart';
 import '2-main.dart';
 
 Future<void> getUser() async {
